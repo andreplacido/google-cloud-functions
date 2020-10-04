@@ -33,3 +33,13 @@ To check the packages installed (pycharm)
 
 Log error
 - Failed building wheel for pathtools. => pip install wheel
+
+## Deploying our functions
+First, we have to set our project ID with the following command:
+````
+gcloud config set project [YOUR_PROJECT_ID]
+````
+then we deploy our function with this command:
+````
+ gcloud functions deploy [FUNCTION_NAME] --runtime python37 --trigger-http
+````
