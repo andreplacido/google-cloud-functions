@@ -49,3 +49,25 @@ Required : sendgrid package
 ````
 pip install -r requirements.txt 
 ````
+
+## Cors
+After works to solve CORS in the code (helloworl/main.py) to test you canuse the console from your browser and use Javascript to call as the example bellow:<br/>
+````
+fetch('https://[project-URL].cloudfunctions.net/hello_world',{method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({'name':'Jane','lastname':'Due'})}).then(response => response.text()).then(result => console.log(result))
+````
+
+## Schedule Cloud Functions
+We execute the following commands:
+
+```
+gcloud components install beta
+gcloud components update
+gcloud pubsub topics create [TOPIC NAME]
+gcloud pubsub subscriptions create cron-sub --topic [TOPIC NAME]
+```
+
+## Delete cloud Functions
+to delete a Cloud Function execute the following command:
+```
+gcloud functions delete [FUNCTION NAME]
+```
