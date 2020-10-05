@@ -1,0 +1,6 @@
+{
+    "sender":"example@email.com",
+    "receiver":"receiver@email.com",
+    "subject":"test for new cloud function"
+    "message":"hi, if you see this, that's because the cloud function was invoked"
+}

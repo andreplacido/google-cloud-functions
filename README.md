@@ -43,3 +43,9 @@ then we deploy our function with this command:
 ````
  gcloud functions deploy [FUNCTION_NAME] --runtime python37 --trigger-http
 ````
+## Send email
+This code use [sendgrid API](https://sendgrid.com/) - folder emails <br/>
+Required : sendgrid package
+````
+pip install -r requirements.txt 
+````
